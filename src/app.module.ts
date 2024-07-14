@@ -30,7 +30,7 @@ import { resolve } from 'path';
       password: process.env.POSTGRES_PASSWORD,
       database: process.env.POSTGRES_DB,
       models: [User, Role, UserRoles, Post],
-      autoLoadModels: true,
+      autoLoadModels: false,
     }),
     UsersModule,
     RolesModule,
